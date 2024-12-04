@@ -1,0 +1,313 @@
+/* 
+FORMA DE LLAMAR A LAS FUENTES IMPORTADAS DESDE GOOGLE FONTS
+font-family: "Inconsolata", monospace;
+font-family: "Roboto Mono", monospace;
+font-family: "Montserrat", serif;
+*/
+
+/* NORMALIZACIÓN: */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Esto mantiene el ancho y el alto a pesar de padding y border */
+    font-family: "Inconsolata", monospace;
+    list-style: none; /* Esto hace que las listas no tengan puntos o decoración */
+    text-decoration: none;/* Esto hace que los links no aparezcan subrayados */
+    color: whitesmoke;
+}
+
+body{
+    background-color: black;/* TO DO: borrar cuando tengamos el fondo final*/
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex; /* Esto hace que los elementos estén en línea */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Hace que los elementos se separen */
+    padding: 15px 3%;
+    background-color: transparent;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navlist{
+    display: flex; 
+}
+
+.navlist a{
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid rgb(60, 29, 88);
+}
+
+#menu-icon{
+    display: none;
+}
+
+#menu-icon{
+    color: whitesmoke;
+    font-size: 35px;
+    z-index: 101;
+    cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon-action{
+    display: none;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #7040f3 0%, #2f1479 25%, #09021a 75%  );/*fondo con gradiente, el 1er valor es el angulo y los 3 colores por donde pasa el gradiente son los 3 valores siguientes*/
+    position: relative; /*para que sea relativo al contenedor (nos permite top, right, left y bottom)*/
+    display: grid;/*para que el hero se pueda dividir en 2 columnas (texto e img))*/
+    grid-template-columns: 1fr 1fr;/*las 2 columnas*/
+    align-items: center;/*para alinear verticalmente el hero*/
+    gap: 2rem;/*para que haya espacio de 2 rem entre las 2 columnas*/   
+}
+
+section{
+    padding: 0 8%;
+}
+
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+
+}
+
+.hero-text h1{
+    font-family: "Roboto Mono", monospace;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 0 30px;
+
+}
+
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;    
+}
+
+.h4-skills{
+    margin-bottom: 20px;  
+}
+
+.hero-text p{
+    font-size: 80%;
+    margin-bottom: 40px;
+    line-height: 1.9;
+}
+
+.hero-img img{
+    width: 400px;
+    margin: 10% 0 0 10%;
+    height: auto;
+    transition: all 1.5s linear;
+}
+
+.hero-img img:hover{
+    width: 420px;
+    opacity: 0.6;
+    /* box-shadow: 2px 2px 6px #2f1479;   */
+}
+
+.hero-text a{
+    display: inline-block;
+    background-color: #635881;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.hero-text a:hover{
+    background-color: transparent;
+    border: 1px solid #635881;
+    box-shadow: 2px 2px 6px #2f1479;  
+    transform: translate(2px);  
+
+}
+
+.link{
+    margin-right: 20px;
+}
+
+.icons{
+    position: absolute;
+    top: 50vh;
+    padding: 0 3%;
+    transform: translateY(-50%);
+
+}
+
+.icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all .5s ease;
+}
+
+.icons i:hover{
+    color: #635881;
+    box-shadow: 2px 1px 6px #2f1479;  
+    transform: translate(2px); 
+    border-radius: 50%; 
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+    
+}
+
+.scroll-down i{
+    display: block;
+    padding: 12px;    
+    font-size: 30px;
+    background-color: rgb(9, 2, 26, 0.5);
+    border-radius: 20px;
+    transition: all .5s ease;
+ }
+
+ .scroll-down i:hover{
+    background-color: transparent;
+    border: 1px solid #635881;
+    box-shadow: 2px 2px 6px #15073b;  
+    transform: translateY(2px);  
+ }
+
+ /* RESPONSIVE */
+
+ @media (max-width:992px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .hero-text{
+        padding-top: 0;
+    }
+
+    .hero-text p{
+        font-size: 70%;
+    }
+
+    .hero-img{
+        text-align: center;
+    }
+
+    .hero-img img{
+        width: 80%;
+        margin: 10% 0 0 10%;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .scroll-down{
+        display: none;
+    }
+ }
+
+ @media (max-width:768px){
+
+    #menu-icon{
+        display:block;
+        
+    }
+    
+    /* #menu-icon{
+        color: rgb(15, 15, 15);
+        font-size: 35px;
+        z-index: 101;
+        cursor: pointer;
+    } */
+    
+    /* #menu-toggle{
+        display: block;
+    } */
+    
+   
+    .menu-icon-action{
+        display: block;
+    }
+
+    #menu-icon{
+        display: block;
+    }
+
+    .hero-text{
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    /* .hero-text p{
+        font-size: 70%;
+        padding: 0 10% 0 10%;
+    } */
+
+    .hero-img img{
+        width: 80%;
+        margin: 0;        
+    }
+
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px; 
+        height: auto;
+        background-color:rgba(47, 20, 121, 0.808);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        transition: all .5s ease-out;
+    }
+
+    .navlist a{        
+        display: block;
+        margin: 7px 0;
+
+    }
+
+    #menu-toggle:checked + label.menu-icon-action + ul{
+        right: 0;
+    }
+
+    
+ }
+
