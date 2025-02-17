@@ -63,6 +63,7 @@ header {
     font-size: 35px;
     z-index: 101;
     cursor: pointer;
+    display: none;
 }
 
 #menu-toggle{
@@ -173,9 +174,23 @@ section{
     transition: all .5s ease;
 }
 
-.icons i:hover{
+.github:hover{
     color: #635881;
-    box-shadow: 2px 1px 6px #2f1479;  
+    box-shadow: 2px 1px 6px #ffffff;  
+    transform: translate(2px); 
+    border-radius: 50%; 
+}
+
+.linkedin:hover{
+    color: #635881;
+    box-shadow: 2px 1px 6px #2622e0;  
+    transform: translate(2px); 
+    border-radius: 15%; 
+}
+
+.whatsapp:hover{
+    color: #635881;
+    box-shadow: 2px 1px 6px #2fa00c;  
     transform: translate(2px); 
     border-radius: 50%; 
 }
@@ -242,19 +257,8 @@ section{
     #menu-icon{
         display:block;
         
-    }
-    
-    /* #menu-icon{
-        color: rgb(15, 15, 15);
-        font-size: 35px;
-        z-index: 101;
-        cursor: pointer;
-    } */
-    
-    /* #menu-toggle{
-        display: block;
-    } */
-    
+    }   
+  
    
     .menu-icon-action{
         display: block;
@@ -304,10 +308,8 @@ section{
 
     }
 
-    #menu-toggle:checked + label.menu-icon-action + ul{
+    .navlist.open{
         right: 0;
     }
-
-    
  }
 
