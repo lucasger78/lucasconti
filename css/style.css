@@ -167,37 +167,6 @@ section{
 
 }
 
-.about-section{
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;    
-    position: relative; /*para que sea relativo al contenedor (nos permite top, right, left y bottom)*/
-    display: grid;/*para que el hero se pueda dividir en 2 columnas (texto e img))*/
-    grid-template-columns: 1fr 1fr;/*las 2 columnas*/
-    align-items: center;/*para alinear verticalmente el hero*/
-    gap: 2rem;/*para que haya espacio de 2 rem entre las 2 columnas*/   
-}
-
-.aboutTitle{
-    font-size: xx-large;
-}
-
-.formacion-section{
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;    
-    position: relative; /*para que sea relativo al contenedor (nos permite top, right, left y bottom)*/
-    margin-bottom: 30px;
-    display: grid;/*para que el hero se pueda dividir en 2 columnas (texto e img))*/
-    grid-template-columns: 1fr 1fr;/*las 2 columnas*/
-    align-items: center;/*para alinear verticalmente el hero*/
-    gap: 2rem;/*para que haya espacio de 2 rem entre las 2 columnas*/   
-}
-
-.formacionTitle{
-    font-size: xx-large;
-}
-
 .link{
     margin-right: 20px;
 }
@@ -238,6 +207,7 @@ section{
     border-radius: 50%; 
 }
 
+/* SCROLL DOWN */
 .scroll-down{
     position: absolute;
     bottom: 6%;
@@ -261,7 +231,42 @@ section{
     transform: translateY(2px);  
  }
 
- .formacionUl{
+ /* ABOUT */
+
+ .about-section{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;    
+    position: relative; /*para que sea relativo al contenedor (nos permite top, right, left y bottom)*/
+    display: grid;/*para que el hero se pueda dividir en 2 columnas (texto e img))*/
+    grid-template-columns: 1fr 1fr;/*las 2 columnas*/
+    align-items: center;/*para alinear verticalmente el hero*/
+    gap: 2rem;/*para que haya espacio de 2 rem entre las 2 columnas*/   
+}
+
+.aboutTitle{
+    font-size: xx-large;
+}
+
+/* FORMACIÓN */
+
+.formacion-section{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;    
+    position: relative; /*para que sea relativo al contenedor (nos permite top, right, left y bottom)*/
+    margin-bottom: 30px;
+    display: grid;/*para que el hero se pueda dividir en 2 columnas (texto e img))*/
+    grid-template-columns: 1fr 1fr;/*las 2 columnas*/
+    align-items: center;/*para alinear verticalmente el hero*/
+    gap: 2rem;/*para que haya espacio de 2 rem entre las 2 columnas*/   
+}
+
+.formacionTitle{
+    font-size: xx-large;
+}
+
+.formacionUl{
     margin-top: 55px;
  }
 
@@ -297,6 +302,94 @@ section{
     transform: translateY(2px);  
  }
  
+ /* SKILLS */
+
+.skills-section{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;    
+    position: relative; /*para que sea relativo al contenedor (nos permite top, right, left y bottom)*/
+    margin-bottom: 30px;
+    display: grid;/*para que el hero se pueda dividir en 2 columnas (texto e img))*/
+    grid-template-columns: 1fr 1fr;/*las 2 columnas*/
+    align-items: center;/*para alinear verticalmente el hero*/
+    gap: 2rem;/*para que haya espacio de 2 rem entre las 2 columnas*/   
+}
+
+.skillsTitle{
+    font-size: xx-large;
+}
+
+.skills-web{
+    /* border: dotted 1px whitesmoke; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: transparent;    
+    transition: all .5s ease;
+ }
+
+.icons-skills{
+    position: absolute;
+    top: 30vh;
+    right: 12%;
+    transform: translateY(-50%);
+
+}
+
+.icons-skills img{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all .5s ease;
+}
+
+.icons-skills-2{
+    position: absolute;
+    top: 30vh;
+    right: 18%;
+    transform: translateY(-50%);
+
+}
+
+.icons-skills-2 img{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all .5s ease;
+}
+
+.icons-skills-3{
+    position: absolute;
+    top: 30vh;
+    right: 24%;
+    transform: translateY(-50%);
+
+}
+
+.icons-skills-3 img{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all .5s ease;
+}
+ 
+
+.img-skills {
+    display: block;
+    width: 30px; 
+    height: auto;
+}
+.img-skills:hover{
+    color: #635881;
+    transform: translate(10px); 
+}
+
+.img-css{
+    width: 35px;
+}
+
+
 
  /* RESPONSIVE */
 
