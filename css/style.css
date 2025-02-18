@@ -7,7 +7,8 @@ font-family: "Montserrat", serif;
 
 /* NORMALIZACIÓN: */
 html, body {
-    overflow: hidden;
+    overflow-x: hidden; 
+    overflow-y: auto;
 }
 
 * {
@@ -20,8 +21,14 @@ html, body {
     color: whitesmoke;
 }
 
-body{
-    background-color: black;/* TO DO: borrar cuando tengamos el fondo final*/
+body {
+    background: linear-gradient(245.59deg, #7040f3 0%, #2f1479 25%, #09021a 75%);
+    background-attachment: fixed; /* Para que el fondo no se corte */
+    background-size: cover; /* Ajusta el tamaño del gradiente */
+    background-repeat: no-repeat; /* Evita que se repita */
+    min-height: 100vh; /* Asegura que el body siempre tenga altura mínima */
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -82,13 +89,14 @@ header {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #7040f3 0%, #2f1479 25%, #09021a 75%  );/*fondo con gradiente, el 1er valor es el angulo y los 3 colores por donde pasa el gradiente son los 3 valores siguientes*/
-    position: relative; /*para que sea relativo al contenedor (nos permite top, right, left y bottom)*/
-    display: grid;/*para que el hero se pueda dividir en 2 columnas (texto e img))*/
-    grid-template-columns: 1fr 1fr;/*las 2 columnas*/
-    align-items: center;/*para alinear verticalmente el hero*/
-    gap: 2rem;/*para que haya espacio de 2 rem entre las 2 columnas*/   
+    /* background: linear-gradient(245.59deg, #7040f3 0%, #2f1479 25%, #09021a 75%  ); */
+    position: relative; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;  
 }
+
 
 section{
     padding: 0 8%;
@@ -159,6 +167,37 @@ section{
 
 }
 
+.about-section{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;    
+    position: relative; /*para que sea relativo al contenedor (nos permite top, right, left y bottom)*/
+    display: grid;/*para que el hero se pueda dividir en 2 columnas (texto e img))*/
+    grid-template-columns: 1fr 1fr;/*las 2 columnas*/
+    align-items: center;/*para alinear verticalmente el hero*/
+    gap: 2rem;/*para que haya espacio de 2 rem entre las 2 columnas*/   
+}
+
+.aboutTitle{
+    font-size: xx-large;
+}
+
+.formacion-section{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;    
+    position: relative; /*para que sea relativo al contenedor (nos permite top, right, left y bottom)*/
+    margin-bottom: 30px;
+    display: grid;/*para que el hero se pueda dividir en 2 columnas (texto e img))*/
+    grid-template-columns: 1fr 1fr;/*las 2 columnas*/
+    align-items: center;/*para alinear verticalmente el hero*/
+    gap: 2rem;/*para que haya espacio de 2 rem entre las 2 columnas*/   
+}
+
+.formacionTitle{
+    font-size: xx-large;
+}
+
 .link{
     margin-right: 20px;
 }
@@ -221,6 +260,43 @@ section{
     box-shadow: 2px 2px 6px #15073b;  
     transform: translateY(2px);  
  }
+
+ .formacionUl{
+    margin-top: 55px;
+ }
+
+ .formacion-web, .formacion-ux,
+ .formacion-agile, .formacion-db,
+ .formacion-poo, .formacion-dt,
+ .formacion-aws, .formacion-cac,
+ .formacion-coderjs, .formacion-coderpy,
+ .formacion-ues, .formacion-cup,
+ .formacion-ies{
+    border: dotted 1px whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: transparent;    
+    transition: all .5s ease;
+ }
+ .formacion-web:hover, .formacion-ux:hover,
+ .formacion-agile:hover, .formacion-db:hover,
+ .formacion-poo:hover, .formacion-dt:hover,
+ .formacion-aws:hover, .formacion-cac:hover,
+ .formacion-coderjs:hover, .formacion-coderpy:hover,
+ .formacion-ues:hover, .formacion-cup:hover,
+ .formacion-ies:hover{
+    border: dotted 1px whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: rgb(9, 2, 26, 0.5);
+    transition: all .5s ease;    
+    border: 1px solid #635881;
+    box-shadow: 2px 2px 6px #15073b;  
+    transform: translateY(2px);  
+ }
+ 
 
  /* RESPONSIVE */
 
